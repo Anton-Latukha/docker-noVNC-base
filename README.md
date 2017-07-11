@@ -1,10 +1,6 @@
 # Docker noVNC base image
-> Image created to streamline usage of noVNC in Docker for any desktop environment.
 
 [![Release][release-img]][release-url]
-
-You can use this image to install and provide any desktop environment and configuration on top of this image.
-
 
 <table>
   <tr>
@@ -13,6 +9,12 @@ You can use this image to install and provide any desktop environment and config
   <th style="width:200px"><img src="https://cdn.rawgit.com/Anton-Latukha/docker-noVNC-base/master/images/noVNC-logo.svg" alt="noVNC" width="125"></th>
   </tr>
 </table>
+
+----
+Image created to streamline usage of noVNC in Docker for any desktop environment.
+
+You can use this image to install and provide any desktop environment and configuration, on the top of this image.
+----
 
 ## Installation
 
