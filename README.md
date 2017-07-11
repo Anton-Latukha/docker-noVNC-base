@@ -8,9 +8,9 @@ You can use this image to install and provide any desktop environment and config
 
 <table>
   <tr>
-  <th style="width:200px">![Docker](./images/docker-logo.svg)</th>
+  <th style="width:200px">![Docker](https://cdn.rawgit.com/Anton-Latukha/docker-noVNC-base/master/images/docker-logo.svg)</th>
   <th style="font-size:90px">+</th>
-  <th style="width:200px">![noVNC](./images/noVNC-logo.svg)</th>
+  <th style="width:200px">![noVNC](https://cdn.rawgit.com/Anton-Latukha/docker-noVNC-base/master/images/noVNC-logo.svg)</th>
   </tr>
 </table>
 
