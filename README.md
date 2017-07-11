@@ -14,6 +14,7 @@
 Image created to streamline usage of noVNC in Docker for any desktop environment.
 
 You can use this image to install and provide any desktop environment and configuration, on the top of this image.
+
 ----
 
 ## Installation
@@ -41,8 +42,11 @@ _For more examples and usage, please refer to the [Wiki][wiki]._
 ## Development on this image
 
 Ways to develop:
-a) Creating setup straight with Dockerfile.
-b) Logging in to container, with `docker run -it latukha/noVNC-base /bin/bash` and building setup and observing process live.
+
+a) Straight creating image with Dockerfile.
+
+b) Logging in to container, with `docker run -it latukha/noVNC-base /bin/bash` and building setup and observing process live. It can be saved with `docker commit --author "Name mail@email.com" --pause <containerID> <your/repository><:tag>` or translated to Dockerfile.
+
 c) Using a mix of Dockerfile and live logging in to your image container `docker run -it <image> /bin/bash`
 
 ## Release History
@@ -52,15 +56,15 @@ c) Using a mix of Dockerfile and live logging in to your image container `docker
 
 ## Contributing
 
-Happy for improvements and reuse.
+Happy for improvements and reuse by you.
 
 Anton Latukha – [@piroxiline](https://twitter.com/piroxiline) – Anton.Latukha+docker@gmail.com
 
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
+1. Fork it (https://github.com/Anton-Latukha/docker-noVNC-base/fork)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
-5. Please tick `Squash and merge` option while creating Pull Request
+5. Please tick `Squash and merge` while creating Pull Request
 6. Send the Pull Request
 7. Thank you 8)
 
