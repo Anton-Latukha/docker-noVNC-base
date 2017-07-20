@@ -7,6 +7,8 @@ RUN apt-get install -y --no-install-recommends \
         supervisor \
         # for downloading code
         curl \
+        # for https://
+        ca-certificates \
         # for creating virtual display
         xvfb \
         # for provision virtual display as VNC (to feed into noVNC client, noVNC is a browser VNC client in Javascript)
