@@ -3,7 +3,7 @@ MAINTAINER Anton Latukha <anton.latukha+docker@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends \
-        supervisord \
+        supervisor \
         curl \
         x11vnc \
         xvfb
