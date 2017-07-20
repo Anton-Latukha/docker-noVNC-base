@@ -12,6 +12,7 @@ ENV NOVNC_V=0.6.2 \
 RUN curl -L https://codeload.github.com/novnc/noVNC/tar.gz/v"$NOVNC_V" | tar --transform 's,noVNC-'"$NOVNC_V"',noVNC,' --show-transformed -xz -C /opt/
 RUN curl -L https://codeload.github.com/novnc/websockify/tar.gz/v"$WEBSOCKIFY_V" | tar --transform 's,websockify-'"$WEBSOCKIFY_V"',websockify,' --show-transformed -xz -C /opt/noVNC/utils/
 
+CMD /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
 #RUN apt-get autoclean
 #RUN apt-get autoremove
 #RUN rm -rf /var/lib/apt/lists/*
