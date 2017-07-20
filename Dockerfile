@@ -8,6 +8,9 @@ RUN apt-get install -y --no-install-recommends \
         xvfb
 ENV NOVNC_V=0.6.2
 RUN curl -L https://codeload.github.com/novnc/noVNC/tar.gz/v"$NOVNC_V" | tar --transform 's,noVNC-'"$NOVNC_V"',noVNC,' --show-transformed -xz -C /opt/
+RUN curl https://codeload.github.com/novnc/websockify/tar.gz/v0.8.0 -o /tmp/v0.8.0.tar.gz
+RUN cd /tmp && tar -zxvf /tmp/v0.8.0.tar.gz && rm /tmp/v0.8.0.tar.gz
+RUN mv /tmp/websockify-0.8.0 /opt/noVNC/utils/websockify
 #RUN apt-get autoclean
 #RUN apt-get autoremove
 #RUN rm -rf /var/lib/apt/lists/*
